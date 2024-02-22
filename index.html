@@ -4,28 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+
+<!-- styles adapted from https://poke-holo.simey.me/ by @simeydotme -->
+
+    <link rel="icon" href="/img/favicon.png" />
+
+    <!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,700&family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap"> 
+
+    <link rel="stylesheet" href="/css/card.css">
+
 </head>
 <body>
-    <h1>Hello</h1>
-    <h1>Next h1 Tag</h1>
-    <p id="names">Mary, Tez, Tommy</p>
-    <p id="test">test</p>
-    <ul id="tester">
-        <li class="greeting">Hello</li>
-        <li class="greeting">Greeting</li>
-        <li class="greeting">Hi</li>
-    </ul>
-    <div id="special_div">
+    <h1>PokeDex</h1>
+    <p>Type the name or ID of a pokemon</p>
 
-    </div>
-    <button onClick="booyah(event)">Booyah Button</button>
-
+    <!-- Search Form -->
     <form action="">
         <input type="text">
         <button type="submit">Search</button>
     </form>
 
-    <script src="app.js"></script>
+    <!-- Pokemon Card -->
+    <section class="cards">
+        <div class="card charizard animated">
+            <div class="card-border">
+                <h5 class="pname"></h5>
+                <div class="pimg"></div>
+            </div>
+        </div>
+      </section>
+
+    <p>card styles based off of @simeydotme</p>
+    <script src="homework.js"></script>
 </body>
 </html>
